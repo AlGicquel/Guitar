@@ -28,6 +28,7 @@ function growTable() {
 }
 
 growTable();
+launchGame();
 
 // function tdClick(x,y) {
 //     let gameLost = false;
@@ -121,4 +122,6 @@ function noteButton (note) {
     } else {
         alert('Gagné !')
     }
+
+    launchGame();
 }
