@@ -29,24 +29,24 @@ function growTable() {
 
 growTable();
 
-function tdClick(x,y) {
-    let gameLost = false;
-    cellsClicked.push([x,y]);
-    changeBGColor(x,y);
-    console.log(cellsClicked.toString())
-    if (cellsToBeClicked.length === cellsClicked.length) {
-        for (i=0 ; i<cellsClicked.length ; i++) { 
-            if (cellsClicked[i][0] !== cellsToBeClicked[i][0] || cellsClicked[i][1] !== cellsToBeClicked[i][1]) {
-                gameLost = true;
-            }
-        }
-        if (gameLost) {
-            alert('Perdu !')
-        } else {
-            alert('Gagné !')
-        }
-    }
-}
+// function tdClick(x,y) {
+//     let gameLost = false;
+//     cellsClicked.push([x,y]);
+//     changeBGColor(x,y);
+//     console.log(cellsClicked.toString())
+//     if (cellsToBeClicked.length === cellsClicked.length) {
+//         for (i=0 ; i<cellsClicked.length ; i++) { 
+//             if (cellsClicked[i][0] !== cellsToBeClicked[i][0] || cellsClicked[i][1] !== cellsToBeClicked[i][1]) {
+//                 gameLost = true;
+//             }
+//         }
+//         if (gameLost) {
+//             alert('Perdu !')
+//         } else {
+//             alert('Gagné !')
+//         }
+//     }
+// }
 
 function launchGame() {
     let str = "clickez sur les cases suivantes : ";
