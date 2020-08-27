@@ -1,0 +1,25 @@
+*{
+    margin: auto;
+    text-align: center;
+}
+
+.table{
+    border: 1px;
+    margin-top: 20px;
+}
+
+td {
+    
+}
+
+td:hover {
+    background-color: lightgray;
+}
+
+td::selection{
+    background-color: #c7def7;
+}
+
+.cellToClick{
+    background-color: lightskyblue;
+}
