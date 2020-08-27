@@ -5,27 +5,44 @@
         <link type="text/css" rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 
-        <title>Cell Game</title>
+        <title>Guitar</title>
     </head>
 
     <body>
-         
-        <div class="table">
+        <div class="buttons">
+            <button onclick="launchGame()" class="btn btn-primary">Lancer le jeu</button>
+        </div>
+
+        <div class="table-bordered">
             <table id="myTable">
-                <!-- <tr>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>2</td>
-                </tr> -->
+                <tr><th>e</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><th>B</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>o</td></tr>
+                <tr><th>G</th><td></td><td></td><td>o</td><td></td><td>o</td><td></td><td>o</td><td></td><td>o</td><td></td><td></td><td></td></tr>
+                <tr><th>D</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                <tr><th>A</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>o</td></tr>
+                <tr><th>E</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
             </table>
         </div>
 
         <div class="buttons">
-            <button onclick="launchGame()" class="btn btn-primary">Lancer le jeu</button>
-            <button onclick="growTable()" class="btn btn-light">Agrandir le tableau</button>
+            <button class="btn btn-dark" onclick="noteButton('Cs')">C#</button>
+            <button class="btn btn-dark" onclick="noteButton('Ds')">D#</button>
+            <button class="btn btn-dark" onclick="noteButton('Fs')">F#</button>
+            <button class="btn btn-dark" onclick="noteButton('Gs')">G#</button>
+            <button class="btn btn-dark" onclick="noteButton('As')">A#</button>
+
+        </div>
+
+        <div class="buttons">
+            <button class="btn btn-light" onclick="noteButton('C')">C</button>
+            <button class="btn btn-light" onclick="noteButton('D')">D</button>
+            <button class="btn btn-light" onclick="noteButton('E')">E</button>
+            <button class="btn btn-light" onclick="noteButton('F')">F</button>
+            <button class="btn btn-light" onclick="noteButton('G')">G</button>
+            <button class="btn btn-light" onclick="noteButton('A')">A</button>
+            <button class="btn btn-light" onclick="noteButton('B')">B</button>
+
         </div> 
 
     </body>

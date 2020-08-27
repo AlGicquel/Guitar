@@ -9,12 +9,23 @@
 }
 
 td {
-    
+    height: 25px;
+    width: 50px;
 }
 
-td:hover {
-    background-color: lightgray;
+.table-bordered {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
+.buttons {
+    margin-top: 20px;
+
+}
+
+/* td:hover {
+    background-color: lightgray;
+} */
 
 td::selection{
     background-color: #c7def7;
